@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".streetfoodFragment"
+    android:background="@drawable/background2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Ruchidosa"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#F46A3E"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/ruchidosa"
+                android:layout_margin="12dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating from Tourism India"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/RatingBar"
+                android:rating="3.5"
+                android:isIndicator="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:text="With changing likes and Dislikes of mankind, food also evolved. Icon food came into light with each city having it's special food. India has unveiled a tagline and a tricolour logo for geographical indication (GI) certified products. From now on, the GI-registered goods will sport the logo and the tagline to make them more attractive. And dosa is one of the best street foods being followed in the souht india for the food truck business. Moreover, Having a lot of food trucks in vizag Ruchi disa has made its presence by its unique taste and its wide range of varities in dosas."
+                android:gravity="center_horizontal" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:id="@+id/Next"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

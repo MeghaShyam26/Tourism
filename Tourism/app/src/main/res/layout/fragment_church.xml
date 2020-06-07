@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".churchFragment"
+    android:background="@drawable/background2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Ross Hill Church"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#F46A3E"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/rosshill"
+                android:layout_margin="12dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating from Tourism India"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/RatingBar"
+                android:rating="4.5"
+                android:isIndicator="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:text="Ross Hill Church is one of the most beautiful churches in this part of the countrt. Built on a hill top surrounded by hills and water. The Church has an amazing view from the sea side, vizag city, port area. It's a must visit place for religious as well as tourist purpose. Moreover, apart from its amazing view from the hill top one of the main reasons why people of vizag love to come to this place is that this hill symbolizes the unity of hindu-muslim-christian by having a church, temple and a masgid on the same hill. And there will be a festival happening on every Jan wherein people from different places attend it."
+                android:gravity="center_horizontal" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:id="@+id/Next"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

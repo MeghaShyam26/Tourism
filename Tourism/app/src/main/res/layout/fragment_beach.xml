@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beachFragment"
+    android:background="@drawable/background2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. RK Beach"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#F46A3E"
+                android:shadowColor="#DAA961"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="50"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/rkbeach"
+                android:layout_margin="12dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating from Tourism India"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/RatingBar"
+                android:rating="4.5"
+                android:isIndicator="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:text="RK Beach also known as Ramakrishna Beach is situated on the East coast of Bay of Bengal in Visakhapatnam, Andhra Pradesh. It is located near Dolphin's Nose. One of the most popular beaches of Vizag is Ramakrishna beach, more commonly known as RK beach. Further, have a look at the victory at sea memorial,it was hoisted after india won a war against pakisthan at the sea in the year 1971. And Visit the Kailashgiri hill, an eco-park with massive statues of lord shiva and parvathi.Definitely worth watching.You can go by cable car or by walking up the hill."
+                android:gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:gravity="bottom">
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:id="@+id/Next"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

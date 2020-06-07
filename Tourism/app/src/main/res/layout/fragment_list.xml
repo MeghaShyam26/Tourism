@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".listFragment"
+    android:background="@drawable/background1"
+    android:scrollbarStyle="insideInset">
+
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to vizag....!"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:shadowColor="#DAA961"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:autoSizeTextType="uniform"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAlignment="center"
+        android:text="Visakhapatnam is a port city and industrial center in the Indian state of Andhra Pradesh, on the Bay of Bengal. It's known for its many beaches, including Ramakrishna Beach, home to a preserved submarine at the Kursura Submarine Museum. Nearby are the elaborate Kali Temple and the Visakha Museum, an old Dutch bungalow housing local maritime and historical exhibits."
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="(Click the type of places u want to explore from the below options.)"
+        />
+
+
+        <Button
+            android:id="@+id/Places"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Places"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/cancel_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/Hotels"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Hotels"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/next_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+
+
+        <Button
+            android:id="@+id/Temples"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            android:text="Temples"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/cancel_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+        <Button
+            android:id="@+id/StreetFood"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Street food"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/next_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+
+        <Button
+            android:id="@+id/Church"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            android:text="Church"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/cancel_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+        <Button
+            android:id="@+id/Parks"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            android:text="Parks"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/next_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+
+        <Button
+            android:id="@+id/Beaches"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            android:text="Beaches"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/cancel_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+        <Button
+            android:id="@+id/Malls"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#FF9800"
+            android:textSize="15dp"
+            android:text="Malls"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/next_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+
+
+</LinearLayout>
+
+</ScrollView>
+</FrameLayout>

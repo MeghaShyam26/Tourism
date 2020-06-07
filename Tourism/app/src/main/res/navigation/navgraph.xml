@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.final_test.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.final_test.listFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_placesFragment"
+            app:destination="@id/placesFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_templeFragment"
+            app:destination="@id/templeFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_streetfoodFragment"
+            app:destination="@id/streetfoodFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_churchFragment"
+            app:destination="@id/churchFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_parkFragment"
+            app:destination="@id/parkFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_beachFragment"
+            app:destination="@id/beachFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_listFragment_to_mallsFragment"
+            app:destination="@id/mallsFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/placesFragment"
+        android:name="com.example.final_test.placesFragment"
+        android:label="fragment_places"
+        tools:layout="@layout/fragment_places" />
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.example.final_test.hotelFragment"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel" />
+    <fragment
+        android:id="@+id/templeFragment"
+        android:name="com.example.final_test.templeFragment"
+        android:label="fragment_temple"
+        tools:layout="@layout/fragment_temple" />
+    <fragment
+        android:id="@+id/streetfoodFragment"
+        android:name="com.example.final_test.streetfoodFragment"
+        android:label="fragment_streetfood"
+        tools:layout="@layout/fragment_streetfood" />
+    <fragment
+        android:id="@+id/churchFragment"
+        android:name="com.example.final_test.churchFragment"
+        android:label="fragment_church"
+        tools:layout="@layout/fragment_church" />
+    <fragment
+        android:id="@+id/parkFragment"
+        android:name="com.example.final_test.parkFragment"
+        android:label="fragment_park"
+        tools:layout="@layout/fragment_park" />
+    <fragment
+        android:id="@+id/beachFragment"
+        android:name="com.example.final_test.beachFragment"
+        android:label="fragment_beach"
+        tools:layout="@layout/fragment_beach" />
+    <fragment
+        android:id="@+id/mallsFragment"
+        android:name="com.example.final_test.mallsFragment"
+        android:label="fragment_malls"
+        tools:layout="@layout/fragment_malls" />
+</navigation>

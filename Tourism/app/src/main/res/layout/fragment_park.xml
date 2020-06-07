@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".parkFragment"
+    android:background="@drawable/background2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Tenneti park"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#F46A3E"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/tennetipark"
+                android:layout_margin="12dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating from Tourism India"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/RatingBar"
+                android:rating="4"
+                android:isIndicator="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:text="Tenneti Park also known as is an Urban park in the city of Visakhapatnam, India. Situated on the Beach Road in Jodugullapalem,  Tenneti Beach park was destroyed by cyclone Hudhud that flew through the city. Gitam Alumni of North America came together and donated around 60 lakh rupees to renovate the park. The park was thus renovated to international standards and the greenery along the coastline was restored to its former glory. This park is claimed to be the first children’s park in the city and is also known as one of the oldest parks in Visakhapatnam."
+                android:gravity="center_horizontal" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:id="@+id/Next"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
